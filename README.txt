@@ -8,7 +8,7 @@ mkdir -p /var/www/acme-challenge/.well-known/
 # setup webroot-folder and recording location
 mkdir -p /var/www/stream.example.com/records
 # this folder must be writable by the nginx user. usually this is www-data
-chown -r www-data:www-data /var/www/stream.example.com
+chown -R www-data:www-data /var/www/stream.example.com
 
 # copy nginx.conf to /etc/nginx/nginx.conf
 # copy stream.example.com.conf to /etc/nginx/sites-available/stream.example.com.conf
